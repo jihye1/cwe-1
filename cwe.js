@@ -22,3 +22,8 @@ function CWE_670(x) { // STRAY_SEMICOLON
     sum += x;
   }
 }
+
+function CWE_843() { // BAD_TYPE_COERCION
+  let backPosition;
+  return "backgroundPosition: " + backPosition + "px; ";
+}
