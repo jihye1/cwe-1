@@ -34,3 +34,8 @@ function CWE_843() { // BAD_TYPE_COERCION
   let backPosition;
   return "backgroundPosition: " + backPosition + "px; ";
 }
+
+function CWE_843() { // BAD_TYPE_COERCION
+  let backPosition;
+  return "backgroundPosition: " + backPosition + "px; ";
+}
