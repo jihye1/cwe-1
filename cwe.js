@@ -5,6 +5,13 @@ function CWE_398() { // IDENTICAL_BRANCHES
         y = x;
     }
 }
+function CWE_398() { // IDENTICAL_BRANCHES
+    if (x >= 0) {
+        y = x;
+    } else {
+        y = x;
+    }
+}
 function CWE_476() { // NULL_POINTER
     var obj;
     var y = obj.x;  // UNINITIALIZED_LOCAL_VAR
@@ -21,6 +28,11 @@ function CWE_670(x) { // STRAY_SEMICOLON
   {
     sum += x;
   }
+}
+
+function CWE_843() { // BAD_TYPE_COERCION
+  let backPosition;
+  return "backgroundPosition: " + backPosition + "px; ";
 }
 
 function CWE_843() { // BAD_TYPE_COERCION
