@@ -27,3 +27,10 @@ function CWE_843() { // BAD_TYPE_COERCION
   let backPosition;
   return "backgroundPosition: " + backPosition + "px; ";
 }
+
+function CWE_561() { // UNREACHABLE_CODE
+  return;
+
+  const bar = 1;
+  console.log(bar);
+}
