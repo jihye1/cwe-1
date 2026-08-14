@@ -34,3 +34,12 @@ function CWE_561() { // UNREACHABLE_CODE
   const bar = 1;
   console.log(bar);
 }
+
+
+function CWE_484() { // SWITCH_CASE_FALL_THROUGH
+  let x;
+  switch (x) {
+  case '1': console.log('Do one thing');
+  case '2': console.log('Do another thing');
+  }
+}
