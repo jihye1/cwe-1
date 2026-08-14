@@ -5,10 +5,22 @@ function CWE_398() { // IDENTICAL_BRANCHES
         y = x;
     }
 }
-function CWE_476() { // NULL_POINTER
-    var obj;
-    var y = obj.x;  // UNINITIALIZED_LOCAL_VAR
-    console.log(y);
+
+
+function CWE_484() { // SWITCH_CASE_FALL_THROUGH
+  let x;
+  switch (x) {
+  case '1': console.log('Do one thing');
+  case '2': console.log('Do another thing');
+  }
+}
+
+
+function CWE_670(x) { // STRAY_SEMICOLON
+  while (++x <= 10) ;
+  {
+    sum += x;
+  }
 }
 
 function CWE_480_481() { // BAD_ASSIGN_IN_CONDITION
