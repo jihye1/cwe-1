@@ -1,3 +1,7 @@
+function CWE_843() { // BAD_TYPE_COERCION
+    var backPosition;
+    return "backgroundPosition: " + backPosition + "px; ";
+}
 function CWE_129(x) { // ARRAY_INDEX_NEGATIVE
     var arr = [1, 2, 3];
     if (x < 0) {
